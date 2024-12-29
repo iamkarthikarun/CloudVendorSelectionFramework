@@ -86,7 +86,7 @@ def scheme_a(norm_significance, experts, num_alternatives, num_experts, filex):
             agg_bay_normalized,
             num_alternatives,
             iteration,
-            config.image_dir+f"Set_{iteration + 1}_SchemeA.png"
+            config.image_dir.joinpath(f"Set_{iteration + 1}_SchemeA.png")
         )
         
 
@@ -131,7 +131,7 @@ def scheme_b(GR_agg, qrofn, weights_sig, attitude_values, num_attributes,
     ax.set_ylabel('Rank Values', fontsize=20, weight='bold')
     ax.set_title('Query-1', fontsize=20, weight='bold')
     ax.legend(loc='upper left', ncol=8, bbox_to_anchor=(0.0, 1.0))
-    fig.savefig(config.image_dir+"SchemeB_Single_Query.png")
+    fig.savefig(config.image_dir.joinpath("SchemeB_Single_Query.png"))
 
     print("MultiQuery: 3, 5, 30, 50", file=filex)
 
@@ -168,5 +168,5 @@ def scheme_b(GR_agg, qrofn, weights_sig, attitude_values, num_attributes,
             prioritization_order_multi,
             num_alternatives,
             f"Query-{iter_count}",
-            config.image_dir+f"SchemeB_Query_{iter_count}.png"
+            config.image_dir.joinpath(f"SchemeB_Query_{iter_count}.png")
         )

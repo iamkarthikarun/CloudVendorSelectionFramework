@@ -6,7 +6,7 @@ class Config:
     """
 
     def __init__(self):
-        self.output_dir = "Folder/" #Replace with output files directory
+        self.output_dir = "/home/karthik_arun/Krishan-FuzzyLogic-Files/QCV-DM-SourceCode/src/results/" #Replace with output files directory
         self.num_experts = 4  # Number of experts
         self.num_alternatives = 7  # Number of alternatives
         self.num_attributes = 8  # Number of attributes
@@ -17,7 +17,7 @@ class Config:
         ]
 
         self.output_file = Path(self.output_dir+"opfile.txt")
-        self.image_dir = Path(self.output_dir+"images/")
+        self.image_dir = Path(self.output_dir) / "images/"
         
         self.output_file.parent.mkdir(parents=True, exist_ok=True)
         self.image_dir.mkdir(parents=True, exist_ok=True)

@@ -44,6 +44,13 @@ This repository contains the Python code used for the implementation, analysis, 
 ├── utils.py               # Utility functions (e.g., rotate)
 ├── visualization.py       # Handles all plotting and graphical outputs
 ├── results/               # Directory containing output files and visualizations
+│   ├── opfile.txt         # Output log file for all results including Attitudinal-CRITIC values, rankings, prioritizations etc.,
+│   ├── images/
+│   │   ├──heatmap.png                  # Correlation heatmap
+│   │   ├──SchemeB_Query_<N>.png        # Prioritization plots for Scheme B for various query values (N denotes query values)
+│   │   ├──SchemeB_Single_Query.png     # Prioritization plot for Scheme B for single query value
+│   │   ├──Set_<N>_SchemeA.png          # Sensitivity analysis plots for Scheme A (N denotes various iterations)
+
 ```
 
 ---
